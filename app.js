@@ -3,6 +3,8 @@ const app = express();
 
 const path = require("path");
 
+app.use(express.static("public"))
+
 app.listen(3000, () => {
     console.log("Servidor Corriendo en el Puerto 3000")
 });
