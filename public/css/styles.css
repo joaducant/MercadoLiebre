@@ -5,10 +5,18 @@ body{
 header{
     background-color: #EAC926;
     background-size: contain;
-};
+}
 
 main{
-    background-color: #666;
+    background-color: #ebebeb;
+}
+
+#Cuotas{
+    text-align: center;
+}
+
+.lista{
+    list-style-type: none;
 }
 
 .Titulares{
@@ -25,4 +33,8 @@ main{
 
 .Descripciones{
     font-size: 16px;
+}
+
+.Text-body{
+    font-size: 12px;
 }
