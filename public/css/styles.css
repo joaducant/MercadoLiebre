@@ -72,14 +72,13 @@ div.burger-menu i{
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
-    height: 40px;
     margin: 10px 0px 20px 0px;
     padding: 10px;
-    width: 40px;
 }
 
 article div.main-article{
-    width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .price{
@@ -102,11 +101,21 @@ section.banner img{
 }
 
 main{
-    width: 90%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 main section article{
     background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article div{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+
 }
 
 main section article img{
@@ -118,4 +127,26 @@ main section article i,
     color: #39b54a;
 }
 
+main section article i{
+    border: solid 2px #39b54a;
+    padding: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+}
 
+footer{
+    text-align: center;
+    padding: 5vw;
+}
+
+footer i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: 12px;
+    padding-bottom: 20px;
+}
