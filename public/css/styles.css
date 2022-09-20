@@ -32,6 +32,7 @@ header div.logo{
 }
 header nav{
     font-size: 12px;
+    padding-bottom: 20px;
 }
 
 header ul li{
@@ -149,4 +150,19 @@ footer i{
 footer p{
     font-size: 12px;
     padding-bottom: 20px;
+}
+
+@media (max-width: 361px){
+    .description{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+}
+
+@media (min-width: 361px){
+    div.burger-menu{
+        display: none;
+    }
 }
