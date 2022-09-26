@@ -17,16 +17,45 @@ p{
 }
 
 .top-header{
-    padding: 5%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 46%;
+}
+
+.barra-busqueda{
+    display: flex;   
+    align-items: center;   
+    width: 46%;   
+} 
+
+.input-barra-busqueda{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ebebeb;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.barra-busqueda{
+    width: 50%;
+}
+
+.button{
+    height: 100%;
 }
 
 header{
     background-color: #EAC926;
 }
 
-.logo{
-    width: 50%;
-    padding: 10px;
+header div input{
+    width: 100%;
 }
 
 header nav{
@@ -44,24 +73,10 @@ header ul li a{
     color: #000;
 }
 
-.form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-.form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
 .top-header p{
     width: 100%;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .burger-menu{
@@ -191,7 +206,45 @@ footer p{
     main section article{
         width: 49%;
     }
+    .barra-busqueda{
+        max-width: 35%;
+    }
+    .logo{
+        width: 180px;
+    }
 }
+
+@media (min-width:768px){
+    header div.burger-menu{
+        display: none;
+    }
+    header nav{
+        display: block;
+    }
+    .products{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main section article{
+        width: 49%;
+    }
+    .barra-busqueda{
+        max-width: 35%;
+    }
+    .logo{
+        width: 180px;
+    }
+    .top-header{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    header div p{
+        max-width: 35%;
+    }
+}
+
 
 @media (min-width: 1200px){
     header div.burger-menu{
@@ -208,5 +261,21 @@ footer p{
     main section article{
         width: 24%;
     }
+    .main-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 15px 20px 15px;
+    }
+    .nav-generico{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .nav-usuario{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }   
 }
 
