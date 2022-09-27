@@ -39,32 +39,32 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-        <main>
-            <form action="/register" method="POST">
-                <div>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+        <main class="main-registro">
+            <form class="formulario-registro" action="/" method="GET">
+                <div class="nombre-registro">
+                    <input class="input-nombre-registro" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
                 </div>
-                <div>
-                    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de Usuario">
+                <div class="usuario-registro">
+                    <input class="input-usuario-registro" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de Usuario">
                 </div>
-                <div>
-                    <input type="email" name="email" id="email" placeholder="E-Mail">
+                <div class="email-registro">
+                    <input class="input-email-registro" type="email" name="email" id="email" placeholder="E-Mail">
                 </div>
-                <div>
+                <div class="fecha-registro">
                     <p>Fecha de Nacimiento</p>
-                    <input type="date" name="fecha" id="fecha" placeholder="mm/dd/yyyy" min="1900-01-01" max="2100-01-01">
+                    <input class="input-fecha-registro" type="date" name="fecha" id="fecha" placeholder="mm/dd/yyyy" min="1900-01-01" max="2100-01-01">
                 </div>
-                <div>
-                    <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                <div class="domicilio-registro">
+                    <input class="input-domicilio-registro" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
                 </div>
-                <div>
+                <div class="perfil-usuario-registro">
                     <p>Perfil de Usuario</p>
                     <input type="radio" name="perfil-usuario" value="Comprador">
                     <label>Comprador</label>
                     <input type="radio" name="perfil-usuario" value="Vendedor">
                     <label>Vendedor</label>
                 </div>
-                <div>
+                <div class="intereses-registro">
                     <p>Intereses</p>
                     <input type="checkbox" name="intereses" value="Electro">
                     <label>Electro</label>
@@ -77,17 +77,17 @@
                     <input type="checkbox" name="intereses" value="Vida sana">
                     <label>Vida sana</label>
                 </div>
-                <div>
+                <div class="avatar-registro">
                     <p>Foto de Perfil</p>
-                    <input type="file" name="avatar" accept=".jpg .png">
+                    <input class="input-avatar-registro" type="file" name="avatar" accept=".jpg .png">
                 </div>
-                <div>
-                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
-                    <input type="password" name="contraseña" id="contraseña" placeholder="Confirmar Contraseña">
+                <div class="contraseña-registro">
+                    <input class="input-contraseña-registro" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                    <input class="input-confirmar-contraseña-registro" type="password" name="confirmar-contraseña" id="confirmar-contraseña" placeholder="Confirmar Contraseña">
                 </div>
-                <div>
-                    <button type="submit">Envíar</button>
-                    <button type="reset">Cancelar</button>
+                <div class="enviar-cancelar-registro">
+                    <input class="input-enviar-registro" type="submit" value="Envíar">
+                    <input class="input-cancelar-registro" type="reset" value="Cancelar">
                 </div>
             </form>
         </main>
