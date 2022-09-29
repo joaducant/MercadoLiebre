@@ -178,9 +178,12 @@ footer i{
 footer p{
     font-size: 12px;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 .copyright{
     margin-top: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 /* MEDIA QUERYS */
