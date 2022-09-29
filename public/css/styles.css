@@ -1,12 +1,44 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
+header{
+    background-color: #EAC926;
+}
+
+/* TOP HEADER */
+.top-header{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 46%;
+}
+.barra-busqueda{
+    display: flex;   
+    align-items: center;   
+    width: 46%;
+}
+.input-barra-busqueda{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ebebeb;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.button{
+    height: 100%;
+}
+
+
 
 h3{
     font-size: 24px;
@@ -16,47 +48,11 @@ p{
     font-size: 12px;
 }
 
-.top-header{
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.logo{
-    width: 46%;
-}
 
-.barra-busqueda{
-    display: flex;   
-    align-items: center;   
-    width: 46%;   
-} 
 
-.input-barra-busqueda{
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ebebeb;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
 
-.barra-busqueda{
-    width: 50%;
-}
 
-.button{
-    height: 100%;
-}
-
-header{
-    background-color: #EAC926;
-}
-
-header div input{
-    width: 100%;
-}
 
 header nav{
     font-size: 12px;
@@ -173,6 +169,7 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+    color: #39b54a;
 }
 
 footer{
