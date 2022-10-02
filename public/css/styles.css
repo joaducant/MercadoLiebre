@@ -54,7 +54,7 @@ header{
     height: 25px;
     border: none;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     margin: 0;
@@ -64,7 +64,7 @@ header{
     width: 30px;
     height: 25px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     margin: 0;
@@ -323,7 +323,7 @@ footer p{
         align-items: center;
     }
     .search-bar{
-        max-width: 33%;
+        max-width: 40%;
     }
     .logo{
         width: 180px;
@@ -367,7 +367,7 @@ footer p{
         align-items: center;
     }
     .search-bar{
-        max-width: 33%;
+        max-width: 40%;
     }
     .logo{
         width: 180px;
