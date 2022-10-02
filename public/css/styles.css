@@ -199,6 +199,96 @@ footer p{
     padding-bottom: 0px;
 }
 
+/* LOGIN */
+
+
+/* REGISTRO */
+.main-registro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.formulario-registro{
+    display: flex;
+    flex-direction: column;
+}
+.nombre-registro{
+    display: flex;
+}
+.input-nombre-registro{
+    width: 100%;
+}
+.usuario-registro{
+    display: flex;
+}
+.input-usuario-registro{
+    width: 100%;
+}
+.email-registro{
+    display: flex;
+}
+.input-email-registro{
+    width: 100%;
+}
+.fecha-registro{
+    display: flex;
+    flex-direction: column;
+}
+.input-fecha-registro{
+    /* Llenar con estilos */
+}
+.domicilio-registro{
+    display: flex;
+}
+.input-domicilio-registro{
+    width: 100%;
+}
+.perfil-usuario-registro{
+    display: flex;
+    flex-direction: column;
+}
+.radio-inputs-perfil{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.intereses-registro{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox-inputs-intereses{
+    display: flex;
+    flex-direction: column;
+}
+.avatar-registro{
+    display: flex;
+    flex-direction: column;
+}
+.input-avatar-registro{
+    width: 100%;
+}
+.contraseña-registro{
+    display: flex;
+    justify-content: space-between;
+}
+.input-contraseña-registro{
+    width: 48%;
+}
+.input-confirmar-contraseña-registro{
+    width: 48%;
+}
+.enviar-cancelar-registro{
+    display: flex;
+    justify-content: space-between;
+}
+.input-enviar-registro{
+    width: 48%;
+}
+.input-cancelar-registro{
+    width: 48%;
+}
+
 /* MEDIA QUERYS */
 @media (min-width: 768px){
     .burger-menu{
