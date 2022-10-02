@@ -4,90 +4,134 @@
     box-sizing: content-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
-}
-header{
-    background-color: #EAC926;
-}
-
-/* TOP HEADER */
-.top-header{
-    padding: 15px;
+    font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
-.logo{
-    width: 46%;
-}
-.barra-busqueda{
-    display: flex;   
-    align-items: center;   
-    width: 46%;
-}
-.input-barra-busqueda{
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ebebeb;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.button{
-    height: 100%;
-}
-
-
-
 h3{
     font-size: 24px;
+    color: #666;
 }
-
-p{
+.main-nav, .user-nav, p{
     font-size: 12px;
 }
-
-
-
-
-
-
-
-header nav{
-    font-size: 12px;
-    padding-bottom: 20px;
+/* HEADER */
+header{
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 15px;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    min-width: 130px;
+    max-width: 180px;
+}
+.logo img{
+    min-width: 130px;
+}
+.search-bar{
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+}
+.search-bar input{
+    width: 100%;
+    height: 25px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    margin: 0;
+}
+.search-bar button{
+    background-color: #ebebeb;
+    width: 30px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: 0;
+}
+.compra-en-cuotas{
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    margin-top: 20px;
+}
+header p{
+    text-align: center;
+}
+nav{
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: none;
 }
-
-header ul li{
+.main-nav, .user-nav, ul li a{
     list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
     color: #000;
+    text-decoration: none;
 }
-
-.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
-}
-
 .burger-menu{
     text-align: center;
 }
-
 .burger-menu i{
     background-color: #0044AA;
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
-    margin: 10px 0px 20px 0px;
     padding: 10px;
 }
+.banner img{
+    width: 100vw;
+}
 
+/* MAIN */
+main{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+main section{
+    margin-top: 10px;
+}
+.last-visit .products,
+.offers .products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article{
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+main section article img{
+    width: 100%;
+    border-radius: 10px;
+}
 .main-article{
     border-top: solid 1px #ebebeb;
     padding: 15px;
@@ -95,68 +139,26 @@ header ul li a{
     flex-direction: column;
     position: relative;
 }
-
 .price-discount{
     display: flex;
     padding: 0;
     gap: 6px;
     align-items: center;
 }
-
 .price{
     font-size: 18px;
 }
-
 .discount{
     font-size: 16px;
     font-weight: normal;
+    color: #39b54a;
 }
 .description{
     font-size: 16px;
     font-weight: normal;
     display: none;
+    color:#666;
 }
-
-h3,
-.description{
-    color: #666;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-main section article{
-    background-color: #fff;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
-main section article img{
-    width: 100%;
-}
-
-main section article i,
-.discount{
-    color: #39b54a;
-}
-
-/*
-main section article i{
-    border: solid 2px #39b54a;
-    padding: 10px;
-    width: 1em;
-    height: 1em;
-    border-radius: 100%;
-}
-*/
-
 main section article i{
     display: block;
     font-size: 16px;
@@ -172,60 +174,49 @@ main section article i{
     color: #39b54a;
 }
 
+/* FOOTER */
 footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 5vw;
+    padding: 20px;
+    margin-top: 20px;
 }
-
 footer i{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
 }
-
 footer p{
     font-size: 12px;
     padding-bottom: 20px;
+    padding-top: 10px;
+}
+.copyright{
+    margin-top: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-/* =========== register.html ===========*/
-.main-registro{
-    display: flex;
-    justify-content: center;
-}
-
-.formulario-registro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    border: solid 1px #FFF;
-    background-color: #FFF;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 20px;
-}
-.nombre-registro, .usuario-registro,.email-registro{
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    padding: 10px;
-}
-.input-nombre-registro, .input-usuario-registro, .input-email-registro{
-    width: 90%;
-    padding: 5px;
-}
-
-/* =====================================*/
-
-@media (min-width: 361px){
-    header div.burger-menu{
+/* MEDIA QUERYS */
+@media (min-width: 768px){
+    .burger-menu{
         display: none;
     }
     header nav{
         display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        padding: 0px 20px 0px 20px;
+    }
+    .main-nav, .user-nav{
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
     .products{
         display: flex;
@@ -234,53 +225,42 @@ footer p{
     }
     main section article{
         width: 49%;
-    }
-    .barra-busqueda{
-        max-width: 35%;
-    }
-    .logo{
-        width: 180px;
-    }
-}
-
-@media (min-width:768px){
-    header div.burger-menu{
-        display: none;
-    }
-    header nav{
-        display: block;
-    }
-    .products{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    main section article{
-        width: 49%;
-    }
-    .barra-busqueda{
-        max-width: 35%;
-    }
-    .logo{
-        width: 180px;
     }
     .top-header{
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
-    header div p{
-        max-width: 35%;
+    .search-bar{
+        max-width: 33%;
+    }
+    .logo{
+        width: 180px;
+    }
+    .compra-en-cuotas{
+        margin: 0;
+        width: 33%;
     }
 }
 
-
 @media (min-width: 1200px){
-    header div.burger-menu{
+    .burger-menu{
         display: none;
     }
     header nav{
         display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        padding: 0px 20px 0px 20px;
+    }
+    .main-nav, .user-nav{
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
     .products{
         display: flex;
@@ -290,20 +270,20 @@ footer p{
     main section article{
         width: 24%;
     }
-    .main-nav{
+    .top-header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 15px 20px 15px;
+        align-items: center;
     }
-    .nav-generico{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
+    .search-bar{
+        max-width: 33%;
     }
-    .nav-usuario{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }   
+    .logo{
+        width: 180px;
+    }
+    .compra-en-cuotas{
+        margin: 0;
+        width: 33%;
+    }
 }
