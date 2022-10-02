@@ -14,11 +14,13 @@
         <header>
             <div class="top-header">
                 <div class="logo"> 
-                        <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                 </div>
                 <div class="search-bar">
-                    <input type="text" placeholder="Buscar productos, marcas y más">
-                    <button><i class="fa fa-search"></i></button>
+                    <form class="formulario-searh-bar" action="/" method="GET">
+                        <input type="text" placeholder="Buscar productos, marcas y más">
+                        <button class="search-bar-button" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
                 <div class="compra-en-cuotas">
                     <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
@@ -46,36 +48,36 @@
         <main class="main-registro">
             <form class="formulario-registro" action="/" method="GET">
                 <div class="nombre-registro">
-                    <input class="input-nombre-registro" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+                    <input class="input-nombre-registro" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required minlength="6">
                 </div>
                 <div class="usuario-registro">
-                    <input class="input-usuario-registro" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de Usuario">
+                    <input class="input-usuario-registro" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de Usuario" required minlength="6">
                 </div>
                 <div class="email-registro">
-                    <input class="input-email-registro" type="email" name="email" id="email" placeholder="E-Mail">
+                    <input class="input-email-registro" type="email" name="email" id="email" placeholder="E-Mail" required>
                 </div>
                 <div class="fecha-registro">
                     <p>Fecha de Nacimiento</p>
-                    <input class="input-fecha-registro" type="date" name="fecha" id="fecha" placeholder="mm/dd/yyyy" min="1900-01-01" max="2100-01-01">
+                    <input class="input-fecha-registro" type="date" name="fecha" id="fecha" placeholder="mm/dd/yyyy" min="1900-01-01" max="2100-01-01" required>
                 </div>
                 <div class="domicilio-registro">
-                    <input class="input-domicilio-registro" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                    <input class="input-domicilio-registro" type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
                 </div>
                 <div class="perfil-usuario-registro">
                     <p>Perfil de Usuario</p>
                     <div class="radio-inputs-perfil">
-                        <label><input type="radio" name="perfil-usuario" value="Comprador">Comprador</label>
-                        <label><input type="radio" name="perfil-usuario" value="Vendedor">Vendedor</label>
+                        <label><input type="radio" name="perfil-usuario" value="Comprador">  Comprador</label>
+                        <label><input type="radio" name="perfil-usuario" value="Vendedor">  Vendedor</label>
                     </div>
                 </div>
                 <div class="intereses-registro">
                     <p>Intereses</p>
                     <div class="checkbox-inputs-intereses">
-                        <label><input type="checkbox" name="intereses" value="Electro">Electro</label>
-                        <label><input type="checkbox" name="intereses" value="Moda">Moda</label>
-                        <label><input type="checkbox" name="intereses" value="Hogar">Hogar</label>
-                        <label><input type="checkbox" name="intereses" value="Juguetería">Juguetería</label>
-                        <label><input type="checkbox" name="intereses" value="Vida sana">Vida sana</label>
+                        <label><input type="checkbox" name="intereses" value="Electro">  Electro</label>
+                        <label><input type="checkbox" name="intereses" value="Moda">  Moda</label>
+                        <label><input type="checkbox" name="intereses" value="Hogar">  Hogar</label>
+                        <label><input type="checkbox" name="intereses" value="Juguetería">  Juguetería</label>
+                        <label><input type="checkbox" name="intereses" value="Vida sana">  Vida sana</label>
                     </div>
                 </div>
                 <div class="avatar-registro">
@@ -83,8 +85,8 @@
                     <input class="input-avatar-registro" type="file" name="avatar" accept=".jpg .png">
                 </div>
                 <div class="contraseña-registro">
-                    <input class="input-contraseña-registro" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
-                    <input class="input-confirmar-contraseña-registro" type="password" name="confirmar-contraseña" id="confirmar-contraseña" placeholder="Confirmar Contraseña">
+                    <input class="input-contraseña-registro" type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+                    <input class="input-confirmar-contraseña-registro" type="password" name="confirmar-contraseña" id="confirmar-contraseña" placeholder="Confirmar Contraseña" required>
                 </div>
                 <div class="enviar-cancelar-registro">
                     <input class="input-enviar-registro" type="submit" value="Envíar">

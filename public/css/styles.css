@@ -10,7 +10,7 @@ body{
     flex-direction: column;
 }
 h3{
-    font-size: 24px;
+    font-size: 18px;
     color: #666;
 }
 .main-nav, .user-nav, p{
@@ -49,6 +49,11 @@ header{
     justify-content: center;
     min-width: 130px;
 }
+.formulario-searh-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 .search-bar input{
     width: 100%;
     height: 25px;
@@ -59,7 +64,7 @@ header{
     border-top-right-radius: 0px;
     margin: 0;
 }
-.search-bar button{
+.search-bar-button{
     background-color: #ebebeb;
     width: 30px;
     height: 25px;
@@ -68,6 +73,7 @@ header{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     margin: 0;
+    align-items: center;
 }
 .compra-en-cuotas{
     text-align: center;
@@ -98,8 +104,13 @@ nav{
     font-size: 20px;
     padding: 10px;
 }
+.banner{
+    display: flex;
+    height: 100%;
+    padding: 0;
+}
 .banner img{
-    width: 100vw;
+    width: 100%;
 }
 
 /* MAIN */
@@ -200,7 +211,55 @@ footer p{
 }
 
 /* LOGIN */
-
+.main-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.formulario-login{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+.nombre-usuario-login{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contraseña-login{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ingresar-login{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 3px;
+    padding-left: 10px;
+    background-color:  #1259c3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
 /* REGISTRO */
 .main-registro{
@@ -212,41 +271,103 @@ footer p{
 .formulario-registro{
     display: flex;
     flex-direction: column;
+    width: 450px;
 }
 .nombre-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .input-nombre-registro{
     width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
 }
 .usuario-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .input-usuario-registro{
     width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
 }
 .email-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .input-email-registro{
     width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
 }
 .fecha-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: column;
 }
+.fecha-registro p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 .input-fecha-registro{
-    /* Llenar con estilos */
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
 }
 .domicilio-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .input-domicilio-registro{
     width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
 }
 .perfil-usuario-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: column;
+}
+.perfil-usuario-registro p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 .radio-inputs-perfil{
     display: flex;
@@ -255,7 +376,14 @@ footer p{
 }
 .intereses-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: column;
+}
+.intereses-registro p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 .checkbox-inputs-intereses{
     display: flex;
@@ -263,36 +391,99 @@ footer p{
 }
 .avatar-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: column;
 }
+.avatar-registro p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 .input-avatar-registro{
-    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
 }
 .contraseña-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: space-between;
 }
 .input-contraseña-registro{
-    width: 48%;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
+    text-align: center;
 }
 .input-confirmar-contraseña-registro{
-    width: 48%;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    padding: 3px;
+    padding-left: 10px;
+    text-align: center;
 }
 .enviar-cancelar-registro{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: space-between;
 }
 .input-enviar-registro{
-    width: 48%;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 3px;
+    padding-left: 10px;
+    background-color:  #1259c3;
+    text-align: center;
 }
 .input-cancelar-registro{
-    width: 48%;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 3px;
+    padding-left: 10px;
+    background-color:  #1259c3;
+    text-align: center;
 }
 
 /* MEDIA QUERYS */
 @media (min-width: 768px){
-    .burger-menu{
-        display: none;
+    .top-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 180px;
+    }
+    .search-bar{
+        max-width: 35%;
+    }
+    .compra-en-cuotas{
+        margin: 0;
+        width: 33%;
     }
     header nav{
         display: block;
@@ -308,29 +499,19 @@ footer p{
         align-items: center;
         gap: 15px;
     }
+    .burger-menu{
+        display: none;
+    }
+    main section article{
+        width: 49%;
+    }
     .products{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    main section article{
-        width: 49%;
-    }
-    .top-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .search-bar{
-        max-width: 40%;
-    }
-    .logo{
-        width: 180px;
-    }
-    .compra-en-cuotas{
-        margin: 0;
-        width: 33%;
+    .description{
+        display: block;
     }
 }
 
@@ -356,6 +537,9 @@ footer p{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+    .description{
+        display: block;
     }
     main section article{
         width: 24%;
