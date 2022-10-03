@@ -8,6 +8,8 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    margin: 0;
 }
 h3{
     font-size: 18px;
@@ -26,7 +28,7 @@ header{
 .top-header{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 15px;
     padding: 15px;
     text-align: center;
@@ -78,7 +80,6 @@ header{
 .compra-en-cuotas{
     text-align: center;
     justify-self: center;
-    width: 100%;
     margin-top: 20px;
 }
 header p{
@@ -184,6 +185,10 @@ main section article i{
     top: -15px;
     color: #39b54a;
 }
+main section article i:hover{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
 
 /* FOOTER */
 footer{
@@ -198,6 +203,10 @@ footer i{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+}
+footer i:hover{
+    color: #39b54a;
+    transition: color 0.3s;
 }
 footer p{
     font-size: 12px;
@@ -216,6 +225,7 @@ footer p{
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
+    flex-grow: 1;
 }
 .formulario-login{
     display: flex;
@@ -259,6 +269,10 @@ footer p{
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
+}
+.ingresar-login:hover{
+    background-color:  #0022AA;
+    transition: background-color 0.3s;
 }
 
 /* REGISTRO */
@@ -472,7 +486,7 @@ footer p{
     .top-header{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .logo{
@@ -483,7 +497,6 @@ footer p{
     }
     .compra-en-cuotas{
         margin: 0;
-        width: 33%;
     }
     header nav{
         display: block;
@@ -547,17 +560,39 @@ footer p{
     .top-header{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .search-bar{
-        max-width: 40%;
+        max-width: 50%;
     }
     .logo{
         width: 180px;
     }
     .compra-en-cuotas{
         margin: 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .paga-efectivo-tarjeta{
+        display: flex;
+        flex-direction: column;
         width: 33%;
+    }
+    .envio-gratis{
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+    .seguridad{
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+    .copyright{
+        width: 100%;
     }
 }
