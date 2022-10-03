@@ -29,7 +29,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 15px;
     padding: 15px;
     text-align: center;
 }
@@ -40,9 +39,10 @@ header{
     width: 45%;
     min-width: 130px;
     max-width: 180px;
+    margin: 10px;
 }
 .logo img{
-    min-width: 130px;
+    width: 100%;
 }
 .search-bar{
     display: flex;
@@ -50,7 +50,7 @@ header{
     align-items: center;
     justify-content: center;
     min-width: 130px;
-    margin: 20px 0 20px 0;
+    margin: 10px;
 }
 .formulario-searh-bar{
     display: flex;
@@ -81,6 +81,7 @@ header{
 .compra-en-cuotas{
     text-align: center;
     justify-self: center;
+    margin: 10px;
 }
 header p{
     text-align: center;
@@ -584,23 +585,24 @@ footer p{
     }
     footer{
         display: flex;
+        justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .paga-efectivo-tarjeta{
         display: flex;
         flex-direction: column;
-        width: 33%;
+        width: 25%;
     }
     .envio-gratis{
         display: flex;
         flex-direction: column;
-        width: 33%;
+        width: 25%;
     }
     .seguridad{
         display: flex;
         flex-direction: column;
-        width: 33%;
+        width: 25%;
     }
     .copyright{
         width: 100%;
