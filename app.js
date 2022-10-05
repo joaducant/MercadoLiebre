@@ -3,12 +3,18 @@ const path = require("path");
 const app = express();
 
 app.use(express.static("public"));
-app.set("puerto", process.env.PORT || 3000);
+//app.set("puerto", process.env.PORT || 3000);
 
 //RUTAS//
-app.listen(app.get("puerto"), () => {
-    console.log("Servidor Corriendo Correctamente en el Puerto " + app.get("puerto"))
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Servidor Corriendo Correctamente")
 });
+
+
+//app.listen(app.get("puerto"), () => {
+//    console.log("Servidor Corriendo Correctamente en el Puerto " + app.get("puerto"))
+//});
+
 
 app.get("/", (req,res) => {
     res.sendFile(path.join(__dirname, "/views/home.html"))
