@@ -1,12 +1,13 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 
-const path = require("path");
+app.use(express.static("public"));
+app.set("puerto", process.env.PORT || 3000);
 
-app.use(express.static("public"))
-
-app.listen(3000, () => {
-    console.log("Servidor Corriendo en el Puerto 3000")
+//RUTAS//
+app.listen(app.get("puerto"), () => {
+    console.log("Servidor Corriendo Correctamente en el Puerto " + app.get("puerto"))
 });
 
 app.get("/", (req,res) => {

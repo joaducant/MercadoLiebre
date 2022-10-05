@@ -558,6 +558,7 @@ footer p{
     main section article{
         width: 24%;
         box-shadow: none;
+        transition: all 0.3s;
     }
     main section article:hover .description{
         visibility: visible;
